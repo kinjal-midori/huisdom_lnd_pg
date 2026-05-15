@@ -60,7 +60,7 @@ export default function ElephantScene() {
           alt="HUISDOM elephant mascot"
           auto-rotate
           auto-rotate-delay="0"
-          rotation-per-second="18deg"
+          rotation-per-second="11deg"
           camera-controls="false"
           interaction-prompt="none"
           camera-orbit="0deg 75deg 105%"

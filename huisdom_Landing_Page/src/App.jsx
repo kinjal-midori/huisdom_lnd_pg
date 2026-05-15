@@ -62,7 +62,7 @@ function App() {
             HUISDOM
           </h2>
           <p className="font-mono text-[10px] sm:text-[11px] tracking-[0.3em] uppercase text-dawn/60 mb-10">
-            Mountain Travel Collective · Kolkata, India
+            Mountain Travel Collective · Barrackpore, India
           </p>
           <a
             href="mailto:hello@huisdom.in"
@@ -73,7 +73,7 @@ function App() {
             Get in Touch
           </a>
           <p className="font-mono text-[10px] tracking-widest text-snow/20 mt-14">
-            © 2025 HUISDOM · All Rights Reserved
+            © 2026 HUISDOM · All Rights Reserved
           </p>
         </div>
       </footer>
