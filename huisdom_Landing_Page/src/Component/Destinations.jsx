@@ -4,14 +4,14 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const treks = [
-  { id:"01", name:"Kedarkantha",       tag:"Winter Trek",   alt:"12,500 ft", days:"6 Days",
+const trips = [
+  { id:"01", name:"Dhotrey, West Bengal",       tag:"Winter Trek",   alt:"12,500 ft", days:"4 Days",
     img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id:"02", name:"Spiti Valley",      tag:"High Altitude", alt:"15,000 ft", days:"10 Days",
+  { id:"02", name:"Rinchenpong, Sikkim",      tag:"High Altitude", alt:"15,000 ft", days:"2 Days",
     img:"https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80" },
-  { id:"03", name:"Roopkund Trek",     tag:"Mystery Lake",  alt:"16,500 ft", days:"8 Days",
+  { id:"03", name:"Okhrey, Sikkim",     tag:"Mystery Lake",  alt:"16,500 ft", days:"3 Days",
     img:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" },
-  { id:"04", name:"Chadar Trek",       tag:"Frozen River",  alt:"10,800 ft", days:"9 Days",
+  { id:"04", name:"Shrikhola, West Bengal",       tag:"Frozen River",  alt:"10,800 ft", days:"4 Days",
     img:"https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" },
 ];
 
@@ -44,7 +44,7 @@ export default function Destinations() {
 
         {/* Cards — 1 col mobile, 2 col sm, 4 col lg */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-          {treks.map(t => (
+          {trips.map(t => (
             <div key={t.id} className="trek-card group relative overflow-hidden rounded-2xl"
               style={{ height: "clamp(260px, 38vw, 380px)" }}>
 
