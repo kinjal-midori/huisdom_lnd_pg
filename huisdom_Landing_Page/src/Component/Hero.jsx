@@ -33,7 +33,7 @@ export default function Hero() {
         <div ref={contentRef} className="max-w-2xl flex flex-col items-center gap-5">
 
           <span className="font-mono text-[10px] tracking-[0.35em] uppercase text-dawn/80">
-            Independent Mountain Group · Kolkata
+            Independent Travel Group · Barrackpore
           </span>
 
           <h1 className="font-display font-semibold text-snow leading-[1.08]"

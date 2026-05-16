@@ -7,21 +7,32 @@ import Members from "./Component/Members";
 function App() {
   return (
     <div className="overflow-x-hidden">
-
       {/* ── NAV ── */}
       <nav
         className="fixed top-0 left-0 w-full z-50"
-        style={{ background: "linear-gradient(to bottom, rgba(14,32,25,0.88) 0%, transparent 100%)" }}
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(14,32,25,0.88) 0%, transparent 100%)",
+        }}
       >
         <div className="flex items-center justify-between px-5 sm:px-10 py-5 max-w-7xl mx-auto">
           <span className="font-display text-xl tracking-[0.18em] text-snow font-semibold uppercase">
-            HUISDOM
+          <img src="/huisdom.png" alt="Huisdom Logo" className="h-15 w-auto" />{" "}
           </span>
           <div className="flex items-center gap-6 sm:gap-8">
             <ul className="hidden md:flex gap-7 font-mono text-[11px] tracking-widest uppercase text-snow/65">
-              {[["Treks", "#expeditions"], ["Gallery", "#gallery"], ["Tribe", "#tribe"]].map(([label, href]) => (
+              {[
+                ["Treks", "#expeditions"],
+                ["Gallery", "#gallery"],
+                ["Tribe", "#tribe"],
+              ].map(([label, href]) => (
                 <li key={label}>
-                  <a href={href} className="hover:text-dawn transition-colors duration-300">{label}</a>
+                  <a
+                    href={href}
+                    className="hover:text-dawn transition-colors duration-300"
+                  >
+                    {label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -46,13 +57,17 @@ function App() {
       {/* ── FOOTER ── */}
       <footer id="contact" className="relative overflow-hidden bg-pine-dark">
         <img
-          src="/assets/mountain.jpg" alt=""
+          src="/assets/mountain.jpg"
+          alt=""
           className="absolute inset-0 w-full h-full object-cover opacity-15"
           style={{ filter: "brightness(0.5)" }}
         />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, #0e2019 30%, rgba(14,32,25,0.7) 100%)" }}
+          style={{
+            background:
+              "linear-gradient(to top, #0e2019 30%, rgba(14,32,25,0.7) 100%)",
+          }}
         />
         <div className="relative z-10 text-center py-20 sm:py-28 px-5">
           <h2

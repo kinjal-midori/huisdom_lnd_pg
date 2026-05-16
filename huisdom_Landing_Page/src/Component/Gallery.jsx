@@ -5,12 +5,12 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const photos = [
-  { src:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80", label:"Himalayan Dawn",  tall:true,  wide:false },
-  { src:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80", label:"Summit Ridge",    tall:false, wide:false },
-  { src:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80", label:"Valley of Pines", tall:false, wide:false },
-  { src:"https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80", label:"Mountain Road",   tall:false, wide:false },
-  { src:"https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",    label:"Frozen Trek",     tall:false, wide:false },
-  { src:"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80", label:"Lake Solitude",   tall:true,  wide:false },
+  { src:"https://scontent.fccu5-1.fna.fbcdn.net/v/t39.30808-6/502938230_10227935922639788_8670203345200743514_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=2GXAoePJWCwQ7kNvwElDV1u&_nc_oc=AdpAlCW2TrEnd1b7k7ZleyZGZ77GJZtzS6alTOywr_kboAxfnSJ6OrXbsbgWq_YsPKk&_nc_zt=23&_nc_ht=scontent.fccu5-1.fna&_nc_gid=_J9wllW7aclqauzW4ud7eA&_nc_ss=7b2a8&oh=00_Af7kusbmwKBheIDeJP8zY6Bsi_-MNZ9NIJIsC67WAf_6uw&oe=6A0DFE2A", label:"Himalayan Dawn",  tall:true,  wide:false },
+  { src:"https://scontent.fccu5-1.fna.fbcdn.net/v/t39.30808-6/499929955_10227880668338465_9153681225068585817_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_ohc=HsRCi4rzZ1sQ7kNvwEgyBwp&_nc_oc=AdpaTpTgCU0wbLO9i4YFL_R7wcMDsF61qfVLM9yXWMlmJO6GombgN6MlvVdgTBYYeOM&_nc_zt=23&_nc_ht=scontent.fccu5-1.fna&_nc_gid=1CpUvhx-URzlZ-PQ34ZttA&_nc_ss=7b2a8&oh=00_Af78bqI-EmoAjC3BMIJCcynGW0SduA9DMjZadN4qiMOD5w&oe=6A0DEC0E", label:"Depressive Fun",    tall:false, wide:false },
+  { src:"https://scontent.fccu5-1.fna.fbcdn.net/v/t39.30808-6/504848086_10228007831557466_7738979614360878376_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=f727a1&_nc_ohc=_ymvUyokAAYQ7kNvwFJT5sN&_nc_oc=AdpAm_0e0reNicERCaotJRJcYyROFCR9yndz60FK4yC6WY-0LsCzpQkEDAfXgC0nvRY&_nc_zt=23&_nc_ht=scontent.fccu5-1.fna&_nc_gid=v4G_CgK9gjwwdbw6kv7LEw&_nc_ss=7b2a8&oh=00_Af6tMIMO9mARhcI3-dQO2i8yiRff7gqUERIiX9xCWV32rg&oe=6A0E12F6", label:"Valley of Pines", tall:false, wide:false },
+  { src:"https://scontent.fccu5-1.fna.fbcdn.net/v/t39.30808-6/503761378_10228019575051046_1749921463030578483_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=QXLYdLPm00wQ7kNvwHjkmn5&_nc_oc=AdqRcnCjK_2C6BxE9UfloVRjw6w4lcFLBOLD_3vp-w_SkhFrkKfrhJ4wdJBmfJSyVDw&_nc_zt=23&_nc_ht=scontent.fccu5-1.fna&_nc_gid=6Z91MgTfBZ9Eu69EDqVmJQ&_nc_ss=7b2a8&oh=00_Af7U54KGuKr16MY9kDKjtv7aVKCBCXhIJ09xN25ibYIxHQ&oe=6A0E0BB5", label:"The Jaggers",   tall:false, wide:false },
+  { src:"https://scontent.fccu5-1.fna.fbcdn.net/v/t39.30808-6/504531183_10228079443827728_7243771781699375645_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_ohc=LZd9yGhJjF4Q7kNvwGVxwWb&_nc_oc=AdqoPWQFVPx4ffzARAxzy2KbjwOL5jGk1tujJC6-_9k4YSaQqj6aSS3orhhxF2NCP8Y&_nc_zt=23&_nc_ht=scontent.fccu5-1.fna&_nc_gid=8ft2Y2AurrphUgF1YT2QZQ&_nc_ss=7b2a8&oh=00_Af5tcS5U71e2ONqubHK_dvh069uIyw1kP0pYrrr1AsLx7Q&oe=6A0E00BB", label:"Golden Peaks",     tall:false, wide:false },
+  { src:"https://scontent.fccu5-1.fna.fbcdn.net/v/t39.30808-6/513221960_10228323795816375_5786642185920897172_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=f727a1&_nc_ohc=n3daJH_EST4Q7kNvwENySmm&_nc_oc=Adrzr90Pw16G5RXfo8axGbDL-BUG8El8W66CCtS5dq92vkyjqxXqO0kMVZ7DTJtNB04&_nc_zt=23&_nc_ht=scontent.fccu5-1.fna&_nc_gid=LHm5Enan4j8txPowScHy6A&_nc_ss=7b2a8&oh=00_Af6ucnZlE5WGKopfxCMx2a19MnKXbZv44p-zssrVUvbQsQ&oe=6A0DFC81", label:"The Tamers",   tall:true,  wide:false },
 ];
 
 export default function Gallery() {
