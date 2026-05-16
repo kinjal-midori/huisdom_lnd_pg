@@ -5,13 +5,13 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const trips = [
-  { id:"01", name:"Dhotrey, West Bengal",       tag:"Winter Trek",   alt:"12,500 ft", days:"4 Days",
+  { id:"01", name:"Dhotrey, West Bengal",       tag:"Monsoon Trek",   alt:"8,500 ft", days:"4 Days",
     img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" },
-  { id:"02", name:"Rinchenpong, Sikkim",      tag:"High Altitude", alt:"15,000 ft", days:"2 Days",
+  { id:"02", name:"Rinchenpong, Sikkim",      tag:"High Altitude", alt:"5,576 ft", days:"2 Days",
     img:"https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80" },
-  { id:"03", name:"Okhrey, Sikkim",     tag:"Mystery Lake",  alt:"16,500 ft", days:"3 Days",
+  { id:"03", name:"Okhrey, Sikkim",     tag:"Mystery Lake",  alt:"7,600 ft", days:"3 Days",
     img:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" },
-  { id:"04", name:"Shrikhola, West Bengal",       tag:"Frozen River",  alt:"10,800 ft", days:"4 Days",
+  { id:"04", name:"Shrikhola, West Bengal",       tag:"Waterfall River",  alt:"6,900 ft", days:"4 Days",
     img:"https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" },
 ];
 
